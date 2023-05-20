@@ -30,7 +30,6 @@ center "User Report"
 deco
 
 header=()
-
 while read first
 do
   for i in {0..5}
@@ -39,10 +38,7 @@ do
   done
 done < <( head -n 1 biostats.csv)
 
-# echo "${header[@]}"
-
 data=()
-
 while read rec
 do
   for i in {0..5}
